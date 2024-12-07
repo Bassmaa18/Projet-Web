@@ -1,0 +1,468 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+
+/* Home Page Styles */
+
+/* Conteneur principal de la page d'accueil */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f9;
+  padding: 20px;
+}
+
+/* En-tête principal de la page d'accueil */
+.home-header {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Sous-titre de la page d'accueil */
+.home-subtitle {
+  font-size: 1.5rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Section de présentation ou d'introduction */
+.home-intro {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Section des produits (ou catégories) */
+.home-products {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* Style pour chaque carte de produit */
+.home-product-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.home-product-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Image du produit */
+.home-product-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Détails du produit */
+.home-product-details {
+  padding: 15px;
+}
+
+.home-product-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.home-product-price {
+  font-size: 1rem;
+  color: #e67e22;
+  margin-top: 10px;
+}
+
+/* Bouton d'ajout au panier */
+.home-add-to-cart-btn {
+  background-color: #2ecc71;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home-add-to-cart-btn:hover {
+  background-color: #27ae60;
+}
+
+/* Section des témoignages ou autres éléments */
+.home-testimonials {
+  background-color: #fff;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 50px;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.home-testimonials h3 {
+  font-size: 2rem;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.home-testimonials p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+
+
+/* Navbar styles */
+.navbar {
+  background-color: #007bff;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Container styles */
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+/* Login and Signup forms */
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.auth-box {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.auth-box h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.auth-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.auth-box button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.auth-box button:hover {
+  background-color: #0056b3;
+}
+
+
+/* AddProduct Page */
+.add-product-container {
+  background-color: white;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.add-product-container input,
+.add-product-container button {
+  font-size: 18px;
+  padding: 12px;
+}
+
+.add-product-container label {
+  font-size: 18px;
+  color: #333;
+}
+
+.add-product-container h2 {
+  color: #333;
+}
+
+/* ProductList Page */
+.product-list-container {
+  margin: 20px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 5px;
+  height: auto;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.product-card p {
+  color: #555;
+  font-size: 16px;
+}
+
+.product-card button {
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.product-card button:hover {
+  background-color: #0056b3;
+}
+
+/* Style pour la barre de filtrage */
+label {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+select {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+/* Style pour les boutons de l'admin */
+button {
+  background-color: #28a745;
+  color: white;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+button[style*="margin-right"] {
+  margin-right: 10px;
+}
+
+/* Affichage du message lorsqu'aucun produit n'est trouvé */
+.product-list p {
+  font-size: 18px;
+  color: #999;
+  text-align: center;
+  grid-column: span 2;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+
+/* Vue en grille */
+.grid-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Vue en liste */
+.list-view {
+  display: block;
+}
+
+.list-view .product-card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.list-view .product-card img {
+  max-width: 150px;
+  margin-right: 20px;
+}
+
+
+/* Affichage en liste */
+.product-list-container-list {
+  margin-top: 20px;
+}
+
+.product-list-container-list .product-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-list-container-list .product-card img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.product-list-container-list .product-card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.product-list-container-list .product-card p {
+  margin-bottom: 5px;
+}
+
+.product-list-container-list .product-card button {
+  margin-left: 10px;
+  background-color: #28a745;
+}
+
+.btn-view-mode {
+  padding: 10px 15px;
+  margin-right: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-view-mode:hover {
+  background-color: #0056b3;
+}
+
+/* EditProduct Page */
+.edit-product-container {
+  background-color: white;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.edit-product-container input,
+.edit-product-container button {
+  font-size: 18px;
+  padding: 12px;
+}
+
+.edit-product-container label {
+  font-size: 18px;
+  color: #333;
+}
+
+.edit-product-container h2 {
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-list-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .add-product-container,
+  .edit-product-container {
+    padding: 20px;
+  }
+
+  .product-card {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-list-container {
+    grid-template-columns: 1fr;
+  }
+
+  .add-product-container,
+  .edit-product-container {
+    padding: 15px;
+  }
+
+  .product-card {
+    padding: 8px;
+  }
+}
